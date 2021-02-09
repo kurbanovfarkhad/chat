@@ -22,7 +22,7 @@ public class MessageService {
     }
 
     public List<Message> getAll() {
-        return messageRepository.findAll();
+        return messageRepository.findAllByOrderByIdAsc();
     }
 
     public Message saveMessage(MessageForm model) {

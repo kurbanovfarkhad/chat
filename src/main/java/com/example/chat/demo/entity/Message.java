@@ -1,6 +1,7 @@
 package com.example.chat.demo.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.OrderColumn;
 import javax.persistence.Table;
 
 @Entity
