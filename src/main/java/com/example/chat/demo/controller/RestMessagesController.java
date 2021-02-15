@@ -25,7 +25,7 @@ public class RestMessagesController {
     }
 
     @PostMapping("/message")
-    public Message create(@RequestBody MessageForm messageForm){
+    public MessageForm create(@RequestBody MessageForm messageForm){
         return service.saveMessage(messageForm);
     }
 

@@ -25,8 +25,8 @@ public class MessageService {
         return messageRepository.findAllByOrderByIdAsc();
     }
 
-    public Message saveMessage(MessageForm model) {
-        return messageRepository.save(mapper.modelToEntity(model));
+    public MessageForm saveMessage(MessageForm model) {
+        return mapper.entityToModel(messageRepository.save(mapper.modelToEntity(model)));
     }
 
     public void delete(Message message) {
